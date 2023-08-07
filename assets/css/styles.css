@@ -1089,6 +1089,54 @@ img {
     background-color: var(--text-color-light);
 }
 
+/*========= PROJECTS ==========*/
+#p5sketchContainer {
+    width: 100%;
+    height: 475px;
+}
+#p5sketchContainer iframe {
+    width: 100%;
+    height: 475px;
+}
+
+/* Display buttons and iframes on desktop
+#p5sketchContainer iframe,
+#p5sketchContainer .qualification__tabs {
+    display: block;
+} */
+
+/* Hide buttons and iframes on mobile */
+@media screen and (max-width: 768px) {
+    .demo__buttons {
+        display: none;
+    }
+    #p5sketchContainer,
+    #p5sketchContainer iframe,
+    #p5sketchContainer .qualification__tabs {
+        display: none;
+    }
+
+    /* Optionally, display a message for mobile users */
+    .mobile-message {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .demo__buttons {
+        display: flex;
+    }
+    #p5sketchContainer,
+    #p5sketchContainer iframe,
+    #p5sketchContainer .qualification__tabs {
+        display: block;
+    }
+
+    .mobile-message {
+        display: none;
+    }
+}
+
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
