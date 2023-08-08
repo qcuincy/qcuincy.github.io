@@ -103,14 +103,17 @@ function setup() {
     stage1Button.addEventListener('click', () => {
         loadEmbed(`${currentPerformer}stage1`);
         updateActiveStageButton(stage1Button);
+        currentStage = 'stage1';
     });
     stage2Button.addEventListener('click', () => {
         loadEmbed(`${currentPerformer}stage2`);
         updateActiveStageButton(stage2Button);
+        currentStage = 'stage2';
     });
     stage3Button.addEventListener('click', () => {
         loadEmbed(`${currentPerformer}stage3`);
         updateActiveStageButton(stage3Button);
+        currentStage = 'stage3';
     });
     
 }
@@ -135,6 +138,7 @@ function updateActiveStageButton(activeButton) {
         button.classList.remove('qualification__active');
     });
     activeButton.classList.add('qualification__active');
+    
 }
 
 function updateActivePerfButton(activeButton) {
