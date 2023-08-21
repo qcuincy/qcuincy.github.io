@@ -1158,6 +1158,15 @@ img {
 }
 
 
+canvas {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px){
