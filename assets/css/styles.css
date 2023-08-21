@@ -534,40 +534,60 @@ img {
     background-color: var(--first-color)
 }
 
-.skills__html{
-    width: 90%;
-}
-.skills__css{
+.skills__dataprep{
     width: 80%;
 }
-.skills__js{
-    width: 60%;
+.skills__dataexplore{
+    width: 80%;
 }
-.skills__react{
+.skills__modeldev{
     width: 85%;
 }
-
-.skills__php{
-    width: 80%;
-}
-.skills__node{
+.skills__featselect{
     width: 70%;
 }
-.skills__firebase{
-    width: 90%;
+
+.skills__suplearn{
+    width: 80%;
 }
+.skills__dlnn{
+    width: 60%;
+}
+.skills__modelinterp{
+    width: 70%;
+}
+.skills_hypertune{
+    width: 75%;
+}
+
+.skills__calcalgebra{
+    width: 85%;
+}
+.skills__modeloptim{
+    width: 75%;
+}
+.skills__numericalmethods{
+    width: 70%;
+}
+
+.skills__diffeq{
+    width: 75%;
+}
+
 .skills__python{
     width: 85%;
 }
 
-.skills__figma{
-    width: 80%;
+.skills__matlab{
+    width: 75%;
 }
-.skills__sketch{
-    width: 80%;
+
+.skills__c{
+    width: 60%;
 }
-.skills__photoshop{
-    width: 90%;
+
+.skills__js{
+    width: 80%;
 }
 
 .skills__close .skills__list{
