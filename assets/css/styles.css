@@ -1179,6 +1179,11 @@ img {
     margin-bottom: var(--mb-2);
 }
 
+.query-image-holder.active{
+    background-color: rgba(133, 170, 173, 0.5);
+    color: #fff;
+}
+
 .result-image-holder{
     position:relative;
     background-color:var(--container-color);
@@ -1204,6 +1209,10 @@ img {
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: var(--mb-2);
+}
+
+.project__data{
+    padding: 0 1.5rem;
 }
 
 /* Hide buttons and iframes on mobile */

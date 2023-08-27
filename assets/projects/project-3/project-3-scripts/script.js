@@ -1,5 +1,16 @@
 const imageList = ['img (1).jpg', 'img (2).jpg', 'img (3).jpg', 'img (4).jpg', 'img (5).jpg']
-function showResults(queryImage, folderIndex) {
+function showResults(imgElement, queryImage, folderIndex) {
+    // Remove active class from all image holders
+    const imageHolders = document.getElementsByClassName('query-image-holder');
+    for (let i = 0; i < imageHolders.length; i++) {
+        imageHolders[i].classList.remove('active');
+    }
+
+    // Get the current query image holder span
+    const parentSpan = imgElement.parentElement;
+    // add active class to the parent span
+    parentSpan.classList.add('active');
+
     const resultContainer = document.getElementById('resultContainer');
     resultContainer.innerHTML = ''; // Clear previous results
 
@@ -17,12 +28,6 @@ function showResults(queryImage, folderIndex) {
         resultImage.className = 'result-image';
         resultSpan.appendChild(resultImage);
         
-        
-
-        // const resultImage = document.createElement('img');
-        // resultImage.src = result;
-        // resultImage.className = 'result-image';
-        // resultContainer.appendChild(resultImage);
     });
 }
 
