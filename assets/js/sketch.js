@@ -110,9 +110,7 @@ function setupSketch() {
 
       p.setup = function() {
         let sketchHolder = document.getElementById("home__img");
-        if (sketchHolder.firstChild) {
-          sketchHolder.removeChild(sketchHolder.firstChild);
-        }
+        sketchHolder.innerHTML = "";
         
         canvasWidth = document.getElementById("home__img").offsetWidth;
         canvas = p.createCanvas(canvasWidth, canvasWidth, p.SVG);
