@@ -1218,26 +1218,7 @@ img {
     padding: 0 1.5rem;
 }
 
-.swiper.project__swiper {
-    width: 100%;
-    height: 100%;
-  }
 
-.swiper-slide.project__swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide.project__swiper-slide img {
-    display: block;
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-}
 
 
 .qualification__tabs {
@@ -1247,9 +1228,30 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.swiper.project__swiper {
-    margin-bottom: 5rem;
+
+.swiper-pagination.project__pagination.swiper-pagination-bullets{
+    bottom: -3.5rem;
 }
+
+.swiper.project__swiper{
+    margin-bottom: 2rem;
+}
+
+.video__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo__video{
+    max-width: 100%;
+    height:auto;
+}
+
 
 
 
@@ -1318,6 +1320,10 @@ img {
         transform: translateX(-2rem);
     }
 
+    .video__container{
+        width: 300px;
+    }
+
 
 }
 
@@ -1345,6 +1351,12 @@ img {
 
     .home__content{
         grid-template-columns: .25fr 3fr;
+    }
+
+    .video__container{
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
 
@@ -1470,6 +1482,12 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .video__container{
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
 
     .qualification__sections{
         display:grid;
@@ -1525,6 +1543,14 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+
+    .video__container{
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
     .container{
         margin-left: auto;
         margin-right: auto;
@@ -1536,6 +1562,9 @@ img {
 
     .section{
         padding: 6rem 0 2rem;
+    }
+    .portfolio.section{
+        padding: 2rem 0 2rem;
     }
 
     .section__subtitle{
