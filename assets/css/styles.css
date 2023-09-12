@@ -1481,11 +1481,7 @@ img {
         justify-self:center    
     }
 
-    .about__container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    /* .about__container, */
+
     .skills__container,
     .portfolio__content,
     .project__container,
@@ -1652,7 +1648,6 @@ img {
         width: 350px;
     }
     .about__description{
-        /* text-align: initial; */
         text-align: center;
     }
     .about__info{
@@ -1660,7 +1655,7 @@ img {
     }
 
     .about__buttons{
-        justify-content: initial;
+        justify-content: center;
     }
 
     .qualification__tabs{
