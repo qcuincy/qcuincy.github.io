@@ -1481,7 +1481,10 @@ img {
         justify-self:center    
     }
 
-
+    .about__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
     /* .about__container, */
     .skills__container,
     .portfolio__content,
