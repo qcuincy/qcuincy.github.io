@@ -81,7 +81,7 @@
             <!--==================== PROJECT ====================-->
             <section class="about section">
                 <h2 class="section__title">Project 4</h2>
-                <span class="section__subtitle">Solar Panel </span>
+                <span class="section__subtitle">Solar Panel Dust Detection Object Detection.</span>
 
                 <div class="about__container container">
 
@@ -157,7 +157,17 @@
             </section>
 
             <section class="portfolio section">
-                <div class="container video__container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex holder__active" id="imageButton">
+                        <!-- <i class="uil uil-graduation-cap qualification__icon"></i> -->
+                        Static Images
+                    </div>
+                    <div class="qualification__button button--flex" id="videoButton">
+                        <!-- <i class="uil uil-briefcase-alt qualification__icon"></i> -->
+                        Video Footage
+                    </div>
+                </div>
+                <div class="container video__container hidden" id="videoHolder">
                     <video class="demo__video" controls>
                         <source src="/assets/projects/project-4/project-4-data/project-4-demo_footage.mp4" type="video/mp4">
                         Your browser does not support the video tag.
@@ -165,7 +175,7 @@
                     
                 </div>
                 
-                <div class="portfolio__container container swiper project__swiper">
+                <div class="portfolio__container container swiper project__swiper" id="imageHolder">
                     <div class="swiper-wrapper portfolio__wrapper">
                         <div class="portfolio__content grid swiper-slide">
                             <img src="project-4-data/results/image_0_original.png" alt="" class="portfolio__img">
@@ -335,7 +345,7 @@
         <!--==================== MAIN JS ====================-->
         <script src="/assets/js/main.js"></script>
 
-        <!--==================== CHART JS ====================-->
+        <!--==================== SCRIPT ====================-->
         <script src="/assets/projects/project-4/project-4-scripts/script.js"></script>
     </body>
 </html>

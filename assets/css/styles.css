@@ -722,6 +722,10 @@ img {
     color: var(--first-color);
 }
 
+.holder__active{
+    color: var(--first-color);
+}
+
 /*==================== SERVICES ====================*/
 .services__container{
     gap:1.5rem;
@@ -1253,6 +1257,10 @@ img {
 }
 
 
+.hidden{
+    display:none;
+}
+
 
 
 /* Hide buttons and iframes on mobile */
@@ -1473,7 +1481,8 @@ img {
         justify-self:center    
     }
 
-    .about__container,
+
+    /* .about__container, */
     .skills__container,
     .portfolio__content,
     .project__container,
@@ -1640,7 +1649,8 @@ img {
         width: 350px;
     }
     .about__description{
-        text-align: initial;
+        /* text-align: initial; */
+        text-align: center;
     }
     .about__info{
         justify-content: space-between;
