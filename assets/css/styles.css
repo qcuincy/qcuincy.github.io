@@ -395,6 +395,11 @@ img {
     background-color: var(--first-color-alt);
 }
 
+.button[disabled] {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
 .button__icon{
     font-size:1.25rem;
     margin-left: var(--mb-0-5);
