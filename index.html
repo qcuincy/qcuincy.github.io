@@ -42,11 +42,11 @@
                                 <i class="uil uil-house-user nav__icon"></i> Home
                             </a>
                         </li>
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a href="#about" class="nav__link">
                                 <i class="uil uil-user-square nav__icon"></i> About
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
                                 <i class="uil uil-file-alt nav__icon"></i> Skills
@@ -101,14 +101,19 @@
                             <h1 class="home__title">Hi, I'm Quincy</h1>
                             <h3 class="home__subtitle">Engineering Student</h3>
                             <p class="home__description">Currently studying Engineering Mathematics at the University of Bristol.</p>
-                            <a href="#contact" class="button button--flex">
-                                Contact Me <i class="uil uil-comment-edit button__icon"></i>
-                            </a>
+                            <div class="about__buttons">
+                                <a href="#contact" class="button button--flex">
+                                    Contact Me <i class="uil uil-comment-edit button__icon"></i>
+                                </a>
+                                <a href="assets/pdf/cv.pdf" class="button button--flex" disabled>
+                                    Download CV<i class="uil uil-file-download-alt button__icon"></i>
+                                </a>
+                            </div>
                         </div>                   
                     </div>
 
                     <div class="home__scroll">
-                        <a href="#about" class="home__scroll-button button--flex">
+                        <a href="#skills" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
                             <span class="home__scroll-name">Scroll down</span>
                             <i class="uil uil-angle-down home__scroll-arrow"></i>
@@ -118,7 +123,7 @@
             </section>
 
             <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
+            <!-- <section class="about section" id="about">
                 <h2 class="section__title">About me</h2>
                 <span class="section__subtitle">My introduction</span>
 
@@ -128,9 +133,9 @@
                     <div class="about__data">
                         <p class="about__description">
                             <br>
-<!--Hi! I'm Quincy. a creative thinker in the world of Engineering. With a penchant for all things quirky, I aim to infuse my experiences, skills, and approach with an offbeat charm, offering a fresh perspective on every project I tackle. My philosophy is to embrace the unconventional and turn it into something extraordinary.
+Hi! I'm Quincy. a creative thinker in the world of Engineering. With a penchant for all things quirky, I aim to infuse my experiences, skills, and approach with an offbeat charm, offering a fresh perspective on every project I tackle. My philosophy is to embrace the unconventional and turn it into something extraordinary.
                             <br>
-                            When I'm not immersing myself in solving problems, you'll find me pursuing a range of interests. I'm passionate about staying fit and thrive on competition, whether it's on the field or around a virtual map. I also love taking long, leisurely walks with my dogs. Additionally, I find inspiration in crafting music, where every note becomes a canvas for my creativity.-->
+                            When I'm not immersing myself in solving problems, you'll find me pursuing a range of interests. I'm passionate about staying fit and thrive on competition, whether it's on the field or around a virtual map. I also love taking long, leisurely walks with my dogs. Additionally, I find inspiration in crafting music, where every note becomes a canvas for my creativity.
                             <br>
                         </p>
                         <div class="about__info">
@@ -155,7 +160,7 @@
 
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
@@ -476,9 +481,9 @@
                 <!-- <h2 class="section__title">Services</h2> -->
                 <!-- <span class="section__subtitle">What i offer</span> -->
                 
-                <div class="services__container container grid">
+                <!-- <div class="services__container container grid"> -->
                     <!--==================== SERVICES 1 ====================-->
-                    <div class="services__content">
+                    <!-- <div class="services__content">
                         <div>
                             <i class="uil uil-lightbulb-alt services__icon"></i>
                             <h3 class="services__title">Dynamic <br> Problem Solver</h3>
@@ -514,9 +519,9 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--==================== SERVICES 2 ====================-->
-                    <div class="services__content">
+                    <!-- <div class="services__content">
                         <div>
                             <i class="uil uil-puzzle-piece services__icon"></i>
                             <h3 class="services__title">Adaptable <br> Leadership</h3>
@@ -552,9 +557,9 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--==================== SERVICES 3 ====================-->
-                    <div class="services__content">
+                    <!-- <div class="services__content">
                         <div>
                             <i class="uil uil-book-open services__icon"></i>
                             <h3 class="services__title">Curiosity-Driven <br> Learning</h3>
@@ -592,7 +597,7 @@
                         </div>
                     </div>
 
-                </div>
+                </div> -->
             <!-- </section> -->
 
             <!--==================== PORTFOLIO ====================-->
@@ -705,36 +710,36 @@
 
                             <div>
                                 <h3 class="contact__title">Location</h3>
-                                <span class="contact__subtitle">UK - Bristol</span>
+                                <span class="contact__subtitle">UK - Leamington Spa</span>
                             </div>
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
+                            <input type="hidden" name="access_key" value="8aa07898-770e-43ca-8ab4-b866c3e11318">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" name="name" class="contact__input" required>
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <input type="email" name="email" class="contact__input" required>
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input">
-                        </div>
-                        <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <textarea name="message" id="" cols="0" rows="7" class="contact__input" required></textarea>
                         </div>
 
+                        <div class="h-captcha__content">
+                            <div class="h-captcha" data-captcha="true"></div>
+                        </div>
                         <div>
-                            <a href="#" class="button button--flex">
+                            <button href="#" type="submit" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -746,14 +751,11 @@
             <div class="footer__bg">
                 <div class="footer__container container grid">
                     <div>
-                        <h1 class="footer__title">Quincy</h1>
-                        <span class="footer__subtitle">Engineering Student</span>
+                        <h1 class="footer__title"><a href="#" class="footer__title">Quincy</a></h1>
+                        <span class="footer__subtitle"><a href="#" class="footer__title">Engineering Student</a></span>
                     </div>
                     
                     <ul class="footer__links">
-                        <li>
-                            <a href="#services" class="footer__link">Services</a>
-                        </li>
                         <li>
                             <a href="#portfolio" class="footer__link">Projects</a>
                         </li>
@@ -772,7 +774,7 @@
                     </div>
                 </div>
 
-                <p class="footer__copy">&#169; Quincy. All rights reserved</p>
+                <!-- <p class="footer__copy">&#169; Quincy. All rights reserved</p> -->
             </div>
         </footer>
         
@@ -790,6 +792,9 @@
         <!--==================== P5 JS BLOB ====================-->
         <!-- <script src="assets/js/setupSketch.js"></script> -->
         <script src="assets/js/sketch.js" id="sketch-script"></script>
+
+        <!--==================== WEB3FORMS SPAM PROTECTION ====================-->
+        <script src="https://web3forms.com/client/script.js" async defer></script>
         
 
     </body>
