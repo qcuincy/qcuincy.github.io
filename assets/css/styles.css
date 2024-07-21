@@ -158,6 +158,9 @@ img {
 .section {
   padding: 2rem 0 4rem;
 }
+.no__button.section {
+  padding: 0 0 0;
+}
 
 .section__title {
   font-size: var(--h1-font-size);
@@ -554,6 +557,37 @@ button.button:hover {
     display: block;
     background-color: var(--first-color)
 }
+.skills__10{
+    width: 10%;
+}
+.skills__20{
+    width: 20%;
+}
+.skills__30{
+    width: 30%;
+}
+.skills__40{
+    width: 40%;
+}
+.skills__50{
+    width: 50%;
+}
+.skills__60{
+    width: 60%;
+}
+.skills__70{
+    width: 70%;
+}
+.skills__80{
+    width: 80%;
+}
+.skills__90{
+    width: 90%;
+}
+.skills__100{
+    width: 100%;
+}
+
 
 .skills__dataprep{
     width: 80%;
@@ -1288,9 +1322,14 @@ button.button:hover {
     height:auto;
 }
 
+.youtube__video__demo{
+    width: 100%;
+    height: 225px;
+    margin-bottom: 2rem;
+}
 .youtube__video{
     width: 300px;
-    height: 450px;
+    height: 100%;
 }
 
 
@@ -1642,6 +1681,9 @@ button.button:hover {
     }
     .portfolio.section{
         padding: 2rem 0 2rem;
+    }
+    .no__button.section{
+        padding: 0 0 0;
     }
 
     .section__subtitle{
