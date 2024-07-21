@@ -159,7 +159,7 @@ img {
   padding: 2rem 0 4rem;
 }
 .no__button.section {
-  padding: 0 0 0;
+  padding: 0 0 4rem;
 }
 
 .section__title {
@@ -1683,7 +1683,7 @@ button.button:hover {
         padding: 2rem 0 2rem;
     }
     .no__button.section{
-        padding: 0 0 0;
+        padding: 0 0 2rem;
     }
 
     .section__subtitle{
