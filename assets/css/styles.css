@@ -1331,7 +1331,7 @@ button.button:hover {
     width: 300px;
     height: 100%;
 }
-iframe.youtube__video_wide{
+.youtube__video_wide{
     height: 300px;
     width: 600px;
 }
@@ -1469,7 +1469,7 @@ iframe.youtube__video_wide{
         height: 333px;
     }
     .youtube__video_wide{
-        width: 333px;
+        width: 350px;
         height: 200px;
     }
 
@@ -1616,7 +1616,7 @@ iframe.youtube__video_wide{
     }
     .youtube__video_wide{
         width: 600px;
-        height: 380px;
+        height: 300px;
     }
 
 
