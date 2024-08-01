@@ -971,6 +971,13 @@ button.button:hover {
     gap:1rem;
     font-size: 0.9rem;
 }
+.project__buttons-single{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap:1rem;
+    font-size: 0.9rem;
+}
 .project__button-icon{
     font-size: 1rem;
     margin-left: auto;
