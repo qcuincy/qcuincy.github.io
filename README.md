@@ -1,1 +1,0 @@
-# qcuincy.github.io
