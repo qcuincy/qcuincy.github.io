@@ -1,0 +1,53 @@
+# .github/workflows/deploy.yml
+
+name: Deploy Portfolio to GitHub Pages
+
+on:
+  # Run on pushes to the 'main' branch
+  push:
+    branches:
+      - main
+  # Allow you to run this workflow manually
+  workflow_dispatch:
+
+# Grant GITHUB_TOKEN permissions to deploy
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }} # This will output the URL
+      
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name:  checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # Or your preferred Node.js version
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        run: npm run build # This will now create an 'out' folder
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './out' # The folder Next.js builds to
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
